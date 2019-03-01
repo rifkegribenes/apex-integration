@@ -1,0 +1,11 @@
+public class ParkLocator {
+    public static List<String> country(String ctry) {
+         ParkService.ParksImplPort parkSvc = 
+            new ParkService.ParksImplPort();
+
+           List<String> resultsList = parkSvc.byCountry(ctry);
+        	system.debug(resultsList);
+          
+        return resultsList;
+    }
+}
